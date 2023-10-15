@@ -25,9 +25,9 @@ const mongoSanitize = require("express-mongo-sanitize");
 
 const port = 3020;
 
-// const dbUrl = process.env.DB_URL;
+const dbUrl = process.env.DB_URL;
 // "mongodb://127.0.0.1:27017/yelp-camp"
-const dbUrl = "mongodb://127.0.0.1:27017/yelp-camp";
+// const dbUrl = "mongodb://127.0.0.1:27017/yelp-camp";
 
 mongoose.connect(dbUrl, {
   useNewUrlParser: true,
